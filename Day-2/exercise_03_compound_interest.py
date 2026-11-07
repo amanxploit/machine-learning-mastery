@@ -54,7 +54,14 @@
 print("=== Compound Interest Calculator ===")
 # YOUR CODE BELOW THIS LINE
 
-
+p = float(input("Principal: $"))
+r_pct = float(input("Annual rate (%): "))
+r = r_pct / 100
+t = int(input("Years: "))
+n = int(input("Compounds/year (1/4/12/365): "))
+a = p * (1 + r/n) ** (n*t)
+interest = a - p
+print(f"Final: ${a:.2f}, Interest: ${interest:.2f}")
 
 # YOUR CODE ABOVE THIS LINE
 print("=== Done ===")
