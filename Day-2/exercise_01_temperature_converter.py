@@ -41,7 +41,17 @@
 print("=== Temperature Converter ===")
 # YOUR CODE BELOW THIS LINE
 
+temp = float(input("Enter temperature: "))
+unit = input("Enter unit (C/F): ").upper()
 
+if unit == "F":
+    converted = (temp - 32) * 5/9
+    print(f"{temp:.2f}°F = {converted:.2f}°C")
+elif unit == "C":
+    converted = (temp * 9/5) + 32
+    print(f"{temp:.2f}°C = {converted:.2f}°F")
+else:
+    print(f"Error: '{unit}' is not a valid unit. Use 'C' or 'F'.")
 
 # YOUR CODE ABOVE THIS LINE
 print("=== Done ===")
