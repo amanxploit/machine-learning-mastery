@@ -44,7 +44,14 @@
 print("=== Distance & Travel Time ===")
 # YOUR CODE BELOW THIS LINE
 
+distance = float(input("Distance (km): "))
+speed = float(input("Speed (km/h): "))
 
+time_hours = distance / speed
+hours = int(time_hours)
+minutes = (time_hours - hours) * 60
+
+print(f"Time: {time_hours:.2f} hours = {hours}h {minutes:.0f}m")
 
 # YOUR CODE ABOVE THIS LINE
 print("=== Done ===")
