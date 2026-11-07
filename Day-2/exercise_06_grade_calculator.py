@@ -46,7 +46,24 @@
 print("=== Grade Calculator ===")
 # YOUR CODE BELOW THIS LINE
 
+hw = float(input("Homework (0-100): "))
+mt = float(input("Midterm (0-100): "))
+fin = float(input("Final (0-100): "))
 
+grade = hw * 0.20 + mt * 0.30 + fin * 0.50
+
+if grade >= 90:
+    letter = "A"
+elif grade >= 80:
+    letter = "B"
+elif grade >= 70:
+    letter = "C"
+elif grade >= 60:
+    letter = "D"
+else:
+    letter = "F"
+
+print(f"Grade: {grade:.1f} ({letter})")
 
 # YOUR CODE ABOVE THIS LINE
 print("=== Done ===")
