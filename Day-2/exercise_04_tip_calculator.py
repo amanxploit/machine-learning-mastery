@@ -44,7 +44,15 @@
 print("=== Tip Calculator ===")
 # YOUR CODE BELOW THIS LINE
 
+bill = float(input("Bill total: $"))
+tip_pct = float(input("Tip %: "))
+people = int(input("Number of people: "))
 
+tip = bill * (tip_pct / 100)
+total = bill + tip
+share = total / people
+
+print(f"Tip: ${tip:.2f} | Total: ${total:.2f} | Each: ${share:.2f}")
 
 # YOUR CODE ABOVE THIS LINE
 print("=== Done ===")
