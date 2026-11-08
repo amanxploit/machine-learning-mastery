@@ -50,7 +50,18 @@
 print("=== Rectangle & Box Calculator ===")
 # YOUR CODE BELOW THIS LINE
 
+length = float(input("Length: "))
+width = float(input("Width: "))
 
+r_area = length * width
+perimeter = 2 * (length + width)
+
+height = float(input("Height: "))
+b_volume = length * width * height
+s_area = 2 * (length * width + length * height + width * height)
+
+print(f"Rectangle: Area={r_area:.2f}, Perimeter={perimeter:.2f}")
+print(f"Box: Volume={b_volume:.2f}, Surface Area={s_area:.2f}")
 
 # YOUR CODE ABOVE THIS LINE
 print("=== Done ===")
