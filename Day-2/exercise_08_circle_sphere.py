@@ -46,7 +46,14 @@
 print("=== Circle & Sphere Calculator ===")
 # YOUR CODE BELOW THIS LINE
 
-
+import math
+r = float(input("Radius: "))
+circle_area = math.pi * r ** 2
+circumference = 2 * math.pi * r
+sphere_volume = (4/3) * math.pi * r ** 3
+sphere_surface = 4 * math.pi * r ** 2
+print(f"Circle: A={circle_area:.2f}, C={circumference:.2f}")
+print(f"Sphere: V={sphere_volume:.2f}, SA={sphere_surface:.2f}")
 
 # YOUR CODE ABOVE THIS LINE
 print("=== Done ===")
