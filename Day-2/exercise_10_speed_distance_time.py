@@ -57,7 +57,28 @@
 print("=== Speed/Distance/Time Calculator ===")
 # YOUR CODE BELOW THIS LINE
 
+print("1) Distance (speed × time)")
+print("2) Speed (distance / time)")
+print("3) Time (distance / speed)")
+choice = int(input("Choose (1/2/3): "))
 
+if choice == 1:
+    speed = float(input("Speed: "))
+    time = float(input("Time: "))
+    distance = speed * time
+    print(f"Distance: {distance:.2f}")
+elif choice == 2:
+    distance = float(input("Distance: "))
+    time = float(input("Time: "))
+    speed = distance / time
+    print(f"Speed: {speed:.2f}")
+elif choice == 3:
+    distance = float(input("Distance: "))
+    speed = float(input("Speed: "))
+    time = distance / speed
+    print(f"Time: {time:.2f}")
+else:
+    print("Invalid")
 
 # YOUR CODE ABOVE THIS LINE
 print("=== Done ===")
