@@ -47,7 +47,15 @@
 print("=== Currency Converter ===")
 # YOUR CODE BELOW THIS LINE
 
+rates = {"EUR": 0.92, "GBP": 0.79, "JPY": 150.00, "INR": 83.00}
+usd = float(input("Amount in USD: $"))
+target = input("Convert to (EUR/GBP/JPY/INR): ").upper()
 
+if target in rates:
+    result = usd * rates[target]
+    print(f"${usd:.2f} = {result:.2f} {target}")
+else:
+    print("Unknown currency")
 
 # YOUR CODE ABOVE THIS LINE
 print("=== Done ===")
