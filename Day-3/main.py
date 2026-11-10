@@ -1,4 +1,4 @@
-
+import math
 
 #Arithmetic operators
 
@@ -26,8 +26,19 @@ friends = 4
 
 
 x = 3.14
+y = 4
+z = 3
 
 # result = round(x)
-print(result)
+# result = abs(y)
+# result = pow(y,z)
+# result = max(x,y,z)
+# result = min(x,y,z)
+result = math.sqrt(z)
+# print(math.pi)
+# print(math.e)
+# print(f"{result:.2f}")
+
+
 
 
